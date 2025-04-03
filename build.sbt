@@ -12,18 +12,19 @@ lazy val app =
     )
     .settings(
       libraryDependencies ++= Seq(
-        "tapir-core",
-        "tapir-http4s-server",
-        "tapir-json-circe",
-        "tapir-openapi-docs"
-      ).map("com.softwaremill.sttp.tapir" %% _)
-        .map(_ % tapirVersion) :+
-        "com.softwaremill.sttp.apispec" %% "openapi-circe-yaml" % "0.11.7"
+        "com.softwaremill.sttp.tapir" %% "tapir-core",
+        "com.softwaremill.sttp.tapir" %% "tapir-http4s-server",
+        "com.softwaremill.sttp.tapir" %% "tapir-json-circe",
+        "com.softwaremill.sttp.tapir" %% "tapir-openapi-docs",
+        "com.softwaremill.sttp.tapir" %% "tapir-swagger-ui-bundle"
+      ).map(_ % tapirVersion)
     )
     .settings(
       libraryDependencies ++= Seq(
-        "org.http4s" %% "http4s-ember-server" % http4sVersion,
-        "org.http4s" %% "http4s-dsl"          % http4sVersion
+        "com.softwaremill.sttp.apispec" %% "openapi-circe-yaml"  % "0.11.7",
+        "io.circe"                      %% "circe-generic"       % "0.14.12",
+        "org.http4s"                    %% "http4s-ember-server" % http4sVersion,
+        "org.http4s"                    %% "http4s-dsl"          % http4sVersion
       )
     )
     .settings(

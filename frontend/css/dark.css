@@ -10,6 +10,14 @@ p {
   color: rgb(232, 232, 232);
 }
 
+table {
+  color: rgb(232, 232, 232);
+}
+
+a {
+  color: hotpink;
+}
+
 button {
   background-color: #3e3e3e;
   border: 2px solid #a4a4a4;

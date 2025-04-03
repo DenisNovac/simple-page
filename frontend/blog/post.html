@@ -8,28 +8,28 @@
 
   <script src="../shared.js"></script>
   <script src="../theme.js"></script>
-  <script src="clock.js"></script>
+  <script src="post.js"></script>
 </head>
 
 <body>
 
   <center>
-    <h2>Manual clock</h2>
+    <h2>Create blog entry</h2>
 
-    <p id='date'>Browser time will appear here</p>
+    <form name="Form name" action="" method="POST">
 
-    <p id='from_server'>Server time will appear here</p>
+      <p>Blog title:</p>
+      <input type="text" name="title" value=""> <br>
+      <p>Blog text:</p>
+      <textarea name="text" rows="15" cols="100"></textarea> <br>
 
-    <button type='button' onclick="pressButton()">Show time</button>
-
-    <p id='counter'></p>
-
+      <input type="button" name="button" value="Send" onClick="send(this.form)">
+    </form>
   </center>
 
   <div class="div_bottom">
     <button class='switch_theme_button' onclick="changeTheme()">Switch theme</button>
   </div>
-
 
 </body>
 

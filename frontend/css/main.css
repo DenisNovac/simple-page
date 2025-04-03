@@ -16,7 +16,22 @@ h2 {
 
 p {
   font-family: monospace;
+  max-width: 50%;
 }
+
+table {
+  font-family: monospace;
+  max-width: 50%;
+  border-collapse: collapse;
+
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
 
 button {
   padding: 15px 32px;

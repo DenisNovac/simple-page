@@ -1,5 +1,3 @@
-
-const host = 'http://localhost:8081'
 let c = 0
 
 function pressButton() {

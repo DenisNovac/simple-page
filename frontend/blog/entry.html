@@ -8,28 +8,22 @@
 
   <script src="../shared.js"></script>
   <script src="../theme.js"></script>
-  <script src="clock.js"></script>
+  <script src="entry.js"></script>
 </head>
 
 <body>
 
   <center>
-    <h2>Manual clock</h2>
+    <h2 id='title'></h2>
 
-    <p id='date'>Browser time will appear here</p>
+    <p id='posted'></p>
 
-    <p id='from_server'>Server time will appear here</p>
-
-    <button type='button' onclick="pressButton()">Show time</button>
-
-    <p id='counter'></p>
-
+    <p id='text'></p>
   </center>
 
   <div class="div_bottom">
     <button class='switch_theme_button' onclick="changeTheme()">Switch theme</button>
   </div>
-
 
 </body>
 
