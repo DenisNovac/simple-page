@@ -1,0 +1,17 @@
+body {
+  background-color: rgb(51, 55, 56);
+}
+
+h2 {
+  color: rgb(255, 255, 255);
+}
+
+p {
+  color: rgb(232, 232, 232);
+}
+
+button {
+  background-color: #3e3e3e;
+  border: 2px solid #a4a4a4;
+  color: white;
+}
